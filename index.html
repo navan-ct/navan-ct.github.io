@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navaneeth CT - Senior Full-Stack Engineer specializing in React, React Native, and Node.js. Discover my projects and expertise.">
+  <title>Navaneeth CT | Senior Full-Stack Engineer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">N<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" id="nav-about-link">About</a></li>
+          <li><a href="#skills" id="nav-skills-link">Skills</a></li>
+          <li><a href="#projects" id="nav-projects-link">Projects</a></li>
+          <li><a href="#testimonials" id="nav-testimonials-link">Testimonials</a></li>
+          <li><a href="#contact" id="nav-contact-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="hero-headline" id="hero-title">Navaneeth CT</h1>
+        <p class="hero-subheading" id="hero-subtitle">Senior Full-Stack Engineer · React · React Native · Node.js</p>
+        <p class="hero-body" id="hero-description">
+          I build clean, well-crafted digital products, from pixel-perfect interfaces to robust backend systems. 5+ years of turning complex problems into simple, maintainable solutions.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="cta-view-work">View My Work</a>
+          <a href="#contact" class="btn btn-secondary" id="cta-get-in-touch">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm Navaneeth, a senior full-stack engineer with over 5 years of experience building web and mobile applications. My work spans the full stack, from crafting responsive UIs in React and React Native to designing scalable APIs in Node.js.
+          </p>
+          <p>
+            I believe great software isn't just about making things work. It's about making things <em>last</em>. Clean, readable, maintainable code is a non-negotiable for me, because the best product decisions mean nothing if the foundation they sit on is brittle.
+          </p>
+          <p>
+            When I'm not coding, you'll find me singing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <div class="skills-container">
+        <h2 class="section-title">Skills & Stack</h2>
+        <p class="skills-intro">
+          I spend most of my time in <strong>React</strong>, <strong>React Native</strong>, and <strong>Node.js</strong>. For styling I reach for <strong>Tailwind CSS</strong>, and on the data side I'm most comfortable with <strong>PostgreSQL</strong> and <strong>MongoDB</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" id="project-trailr">
+          <div class="project-header">
+            <h3>Trailr</h3>
+            <p class="project-description">
+              A cross-platform mobile app for outdoor enthusiasts to discover, log, and share hiking trails. Built with offline-first support for areas with poor connectivity.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React Native</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="link-trailr-demo">
+              Live Demo
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+            <a href="#" class="project-link" id="link-trailr-github">
+              GitHub
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" id="project-invoiq">
+          <div class="project-header">
+            <h3>Invoiq</h3>
+            <p class="project-description">
+              A lightweight invoicing and client management tool for freelancers. Supports recurring billing, PDF export, and multi-currency.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Express.js</span>
+              <span class="stack-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" id="link-invoiq-demo">
+              Live Demo
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+            <a href="#" class="project-link" id="link-invoiq-github">
+              GitHub
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="reveal">
+      <div class="testimonials-container">
+        <h2 class="section-title">Kind Words</h2>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            "Navaneeth has an exceptional ability to write code that other engineers actually enjoy working with. His focus on clarity and maintainability raised the bar for our entire team."
+          </p>
+          <p class="testimonial-author" id="testimonial-author-name">— Arjun Mehta, Engineering Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <div class="contact-content">
+        <h2 class="section-title">Let's connect.</h2>
+        <p class="contact-body">
+          Whether you have a project in mind, a question, or just want to say hello, my inbox is always open.
+        </p>
+        <a href="mailto:navaneeth@email.com" class="email-cta" id="contact-email">navaneeth@email.com</a>
+        <ul class="social-links">
+          <li><a href="#" target="_blank" rel="noopener noreferrer" id="social-github">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer" id="social-linkedin">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Navaneeth CT. All rights reserved.</p>
+      <p>Designed &amp; Built with care</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
