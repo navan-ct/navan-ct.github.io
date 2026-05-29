@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: -0.02em;
+        fill: #0f172a;
+      }
+      .logo-dot {
+        fill: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        .logo-text {
+          fill: #f8fafc;
+        }
+      }
+    </style>
+  </defs>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" class="logo-text">N<tspan class="logo-dot">.</tspan></text>
+</svg>
