@@ -67,3 +67,8 @@ a:hover {
 .desc {
   color: #555;
 }
+
+.email {
+  margin-top: 48px;
+  font-size: 0.95rem;
+}
