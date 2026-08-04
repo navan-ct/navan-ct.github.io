@@ -49,6 +49,10 @@ li {
   line-height: 1.6;
 }
 
+li + li {
+  margin-top: 12px;
+}
+
 a {
   color: #1a1a1a;
   text-decoration: none;
