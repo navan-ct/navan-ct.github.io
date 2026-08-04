@@ -15,116 +15,97 @@
   <meta property="og:description" content="Independent software engineer. Runs OnePointO Labs, builds Page Lens.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@ctnavan">
-  <meta name="theme-color" content="#101216">
+  <meta name="theme-color" content="#0B0E14">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Literata:opsz,wght@7..72,400..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Instrument+Sans:wght@400..600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="sheet">
+  <main class="page">
 
-    <header class="masthead reveal">
-      <h1>Navaneeth CT</h1>
-      <p class="masthead-meta">
-        <span>Independent software engineer</span>
-        <span>Kerala, India</span>
+    <header class="intro">
+      <h1 class="name">Navaneeth CT</h1>
+      <p class="role">Independent Software Engineer in Kerala, India</p>
+      <p class="lead">
+        I have been writing software for six years. I work on my own now,
+        building small web products and taking them from an idea to something
+        people use.
       </p>
     </header>
 
-    <p class="bio reveal">
-      I build and ship small web products. Right now that means running a studio
-      that builds first versions for founders, and making the tools I wanted to
-      use myself.
-    </p>
+    <section aria-labelledby="work-label">
+      <h2 class="rail-label" id="work-label">Work</h2>
 
-    <dl class="fields reveal">
-      <dt>Experience</dt>
-      <dd>Six years shipping production software</dd>
-      <dt>Stack</dt>
-      <dd>TypeScript, React, Node.js, Postgres, AWS</dd>
-    </dl>
-
-    <section class="reveal" aria-labelledby="work">
-      <h2 id="work" class="section-title">Work</h2>
-
-      <article class="record">
-        <h3 class="record-title">
-          <a href="https://onepointolabs.com" target="_blank" rel="noopener noreferrer">
-            OnePointO Labs
-            <svg class="arrow" width="11" height="11" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
-              <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+      <div class="block">
+        <article class="entry">
+          <a class="entry-head" href="https://onepointolabs.com" target="_blank" rel="noopener noreferrer">
+            <span class="entry-name">OnePointO Labs</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="entry-host">
+              onepointolabs.com
+              <svg class="arrow" width="11" height="11" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
+                <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
           </a>
-        </h3>
-        <p class="record-desc">
-          A studio for founders who cannot build the thing themselves. You bring
-          the idea, I scope it, and 21 days later it is live with accounts,
-          payments and a real database behind it.
-        </p>
-        <dl class="fields">
-          <dt>Scope</dt>
-          <dd>Design, build, payments, hosting, handover</dd>
-          <dt>Timeline</dt>
-          <dd>21 days, fixed</dd>
-          <dt>Price</dt>
-          <dd>$2,000, half up front</dd>
-          <dt>Capacity</dt>
-          <dd>Two builds a month</dd>
-        </dl>
-      </article>
+          <p class="entry-desc">
+            A studio for founders who cannot build the thing themselves. You
+            bring the idea, I scope it, design it and build it, and three weeks
+            later it is live with accounts, payments and the code in your own
+            repo.
+          </p>
+        </article>
 
-      <article class="record">
-        <h3 class="record-title">
-          <a href="https://getpagelens.com" target="_blank" rel="noopener noreferrer">
-            Page Lens
-            <svg class="arrow" width="11" height="11" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
-              <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <article class="entry">
+          <a class="entry-head" href="https://getpagelens.com" target="_blank" rel="noopener noreferrer">
+            <span class="entry-name">Page Lens</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="entry-host">
+              getpagelens.com
+              <svg class="arrow" width="11" height="11" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
+                <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
           </a>
-        </h3>
-        <p class="record-desc">
-          A Chrome extension that puts your Search Console numbers in a sidebar,
-          next to the page you are actually looking at. No tab switching, no
-          filtering down to one URL every time.
-        </p>
-        <dl class="fields">
-          <dt>Platform</dt>
-          <dd>Chrome extension</dd>
-          <dt>Shows</dt>
-          <dd>Clicks, impressions, CTR, position, top queries</dd>
-          <dt>Price</dt>
-          <dd>$20, one time</dd>
-          <dt>Privacy</dt>
-          <dd>Data goes from Google to your browser. Nothing is stored on a server.</dd>
-        </dl>
-      </article>
+          <p class="entry-desc">
+            A Chrome extension that puts your Search Console numbers beside the
+            page you are looking at. Clicks, impressions, position and the
+            queries bringing traffic, with no tab switching and no filtering
+            down to one URL.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="reveal" aria-labelledby="contact">
-      <h2 id="contact" class="section-title">Contact</h2>
-      <dl class="fields">
-        <dt>Email</dt>
-        <dd><a href="mailto:hello@navaneethct.com">hello@navaneethct.com</a></dd>
-        <dt>Call</dt>
-        <dd><a href="https://cal.com/navaneethct/20min" target="_blank" rel="noopener noreferrer">Book 20 minutes</a></dd>
-        <dt>GitHub</dt>
-        <dd><a href="https://github.com/navan-ct" target="_blank" rel="noopener noreferrer">navan-ct</a></dd>
-        <dt>X</dt>
-        <dd><a href="https://x.com/ctnavan" target="_blank" rel="noopener noreferrer">@ctnavan</a></dd>
-        <dt>LinkedIn</dt>
-        <dd><a href="https://www.linkedin.com/in/navaneeth-ct" target="_blank" rel="noopener noreferrer">navaneeth-ct</a></dd>
-      </dl>
+    <section aria-labelledby="contact-label">
+      <h2 class="rail-label" id="contact-label">Contact</h2>
+
+      <div class="block">
+        <p class="mail"><a href="mailto:hello@navaneethct.com">hello@navaneethct.com</a></p>
+
+        <p class="call">
+          <a href="https://cal.com/navaneethct/20min" target="_blank" rel="noopener noreferrer">
+            Book a 20 minute call
+            <svg class="arrow" width="11" height="11" viewBox="0 0 11 11" aria-hidden="true" focusable="false">
+              <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </p>
+
+        <ul class="elsewhere">
+          <li><a href="https://github.com/navan-ct" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://x.com/ctnavan" target="_blank" rel="noopener noreferrer">X</a></li>
+          <li><a href="https://www.linkedin.com/in/navaneeth-ct" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
     </section>
 
-    <footer class="colophon reveal">
-      <span>Updated August 2026</span>
-      <span>Set in Literata and IBM Plex Mono</span>
-    </footer>
+    <footer class="foot">Updated August 2026</footer>
 
-  </div>
+  </main>
 
 </body>
 </html>

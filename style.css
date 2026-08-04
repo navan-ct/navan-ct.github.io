@@ -1,290 +1,274 @@
 /* ── Tokens ─────────────────────────────────────────────────────────── */
 
 :root {
-  --ground:  #101216;
-  --surface: #15181d;
-  --rule:    #262a31;
-  --rule-lit:#3a4049;
-  --label:   #949aa3;
-  --text:    #e4e6e9;
-  --body:    #c6cad0;
-  --accent:  #d9b778;
+  --ink:      #0b0e14;
+  --line:     #1e2530;
+  --line-lit: #375563;
+  --mute:     #7c8598;
+  --body:     #b4bbc7;
+  --text:     #e6e9ef;
+  --accent:   #7fd4e8;
 
-  --serif: "Literata", Georgia, "Times New Roman", serif;
-  --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --sans:    "Instrument Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  --rail: 8.5rem;
-  --gap: 1.25rem;
+  --rail: 6.5rem;
+  --rail-gap: 2.5rem;
+  --prose: 33rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html {
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   margin: 0;
-  background: var(--ground);
+  background: var(--ink);
   color: var(--text);
-  font-family: var(--serif);
-  font-optical-sizing: auto;
+  font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection { background: var(--accent); color: var(--ground); }
+::selection { background: var(--accent); color: var(--ink); }
 
 :focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 3px;
-  border-radius: 1px;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
-/* ── Sheet ──────────────────────────────────────────────────────────── */
+/* ── Page grid: a label rail and one column of content ──────────────── */
 
-.sheet {
-  max-width: 46rem;
+.page {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  column-gap: var(--rail-gap);
+  row-gap: clamp(3.25rem, 7vw, 4.75rem);
+  align-content: start;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: clamp(3.5rem, 11vw, 7.5rem) clamp(1.5rem, 6vw, 3rem) 4.5rem;
+  padding: clamp(4rem, 12vw, 8rem) clamp(1.5rem, 6vw, 2.5rem) 4.5rem;
 }
+
+/* Sections hand their children straight to the page grid. */
+.page > section { display: contents; }
+
+.intro,
+.block { grid-column: 2; }
 
 /* ── Masthead ───────────────────────────────────────────────────────── */
 
-.masthead {
-  position: relative;
-  padding-bottom: 1.125rem;
-}
-
-/* The one warm mark on the page: a wheat leader on the title block rule. */
-.masthead::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  background: linear-gradient(to right, var(--accent) 0 4.5rem, var(--rule) 4.5rem);
-}
-
-h1 {
+.name {
   margin: 0;
-  font-size: clamp(2.5rem, 8.5vw, 3.75rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1;
+  font-family: var(--display);
+  font-size: clamp(2.75rem, 9vw, 4.5rem);
+  font-weight: 700;
+  font-stretch: 112%;
+  letter-spacing: -0.022em;
+  line-height: 0.98;
 }
 
-.masthead-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.375rem var(--gap);
-  justify-content: space-between;
-  margin: 1.125rem 0 0;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--label);
-}
-
-/* ── Prose ──────────────────────────────────────────────────────────── */
-
-.bio {
-  max-width: 36.5rem;
-  margin: 2.5rem 0 0;
-  font-size: clamp(1.1875rem, 2.4vw, 1.375rem);
-  line-height: 1.6;
-  letter-spacing: -0.008em;
-  text-wrap: pretty;
-}
-
-/* ── Field grid: the page's one repeating device ────────────────────── */
-
-.fields {
-  display: grid;
-  grid-template-columns: var(--rail) minmax(0, 1fr);
-  margin: 0;
-  align-items: baseline;
-}
-
-.fields dt {
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  font-weight: 400;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--label);
-  padding-top: 0.5rem;
-}
-
-.fields dd {
-  margin: 0;
-  padding-top: 0.375rem;
+.role {
+  margin: 1.25rem 0 0;
   font-size: 0.9375rem;
-  line-height: 1.55;
+  line-height: 1.5;
+  color: var(--mute);
+}
+
+.lead {
+  max-width: var(--prose);
+  margin: 2rem 0 0;
+  font-size: clamp(1.125rem, 2.2vw, 1.25rem);
+  line-height: 1.6;
   color: var(--body);
   text-wrap: pretty;
 }
 
-.bio + .fields {
-  margin-top: 2.25rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
+/* ── Rail labels ────────────────────────────────────────────────────── */
+
+.rail-label {
+  grid-column: 1;
+  margin: 0;
+  padding-top: 0.55rem;
+  font-family: var(--display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-stretch: 110%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mute);
 }
 
-/* ── Section headings: label, then rule to the edge ─────────────────── */
+/* ── Work entries: the name, a leader, the live address ─────────────── */
 
-section { margin-top: 4rem; }
+.entry + .entry { margin-top: 2.75rem; }
 
-.section-title {
+/* Title, leader and address all centre on one axis through the row. */
+.entry-head {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 0 0 1.75rem;
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--label);
-}
-
-.section-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--rule);
-}
-
-/* ── Work records ───────────────────────────────────────────────────── */
-
-.record {
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--rule);
-  transition: border-color 200ms ease;
-}
-
-/* The section rule already separates the first record. */
-.section-title + .record {
-  padding-top: 0;
-  border-top: none;
-}
-
-.record + .record { margin-top: 3rem; }
-
-.record:hover,
-.record:focus-within { border-top-color: var(--rule-lit); }
-
-.record-title {
-  margin: 0;
-  font-size: 1.5rem;
+  gap: 0 1rem;
+  font-family: var(--display);
+  font-size: clamp(1.375rem, 3.6vw, 1.75rem);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  font-stretch: 108%;
+  letter-spacing: -0.015em;
   line-height: 1.2;
-}
-
-.record-title a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   color: var(--text);
   text-decoration: none;
-  transition: color 200ms ease;
 }
 
-.record-title a:hover { color: var(--accent); }
+.leader {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+  transition: background-color 220ms ease;
+}
+
+.entry-host {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: var(--mute);
+  transition: color 220ms ease;
+}
 
 .arrow {
   flex: none;
-  color: var(--label);
-  transition: transform 200ms ease, color 200ms ease;
+  transition: transform 220ms ease;
 }
 
-.record-title a:hover .arrow,
-.record-title a:focus-visible .arrow {
-  transform: translate(2px, -2px);
-  color: var(--accent);
-}
+.entry-head:hover .leader,
+.entry-head:focus-visible .leader { background: var(--line-lit); }
 
-.record-desc {
-  max-width: 33rem;
-  margin: 0.875rem 0 0;
-  font-size: 1.0625rem;
-  line-height: 1.65;
+.entry-head:hover .entry-host,
+.entry-head:focus-visible .entry-host { color: var(--accent); }
+
+.entry-head:hover .arrow,
+.entry-head:focus-visible .arrow { transform: translate(2px, -2px); }
+
+.entry-desc {
+  max-width: var(--prose);
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--body);
   text-wrap: pretty;
 }
 
-.record-desc + .fields { margin-top: 1.5rem; }
+/* ── Contact ────────────────────────────────────────────────────────── */
 
-/* ── Links inside fields ────────────────────────────────────────────── */
-
-.fields a {
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: var(--rule-lit);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.22em;
-  transition: color 160ms ease, text-decoration-color 160ms ease;
+.mail {
+  margin: 0;
+  font-size: clamp(1.25rem, 3.2vw, 1.5rem);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
 }
 
-.fields a:hover {
+.call {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.call a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.elsewhere {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+}
+
+.mail a,
+.call a,
+.elsewhere a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.24em;
+  text-decoration-color: var(--line-lit);
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+/* The one spot of colour at rest, on the thing most people came for. */
+.mail a { text-decoration-color: rgba(127, 212, 232, 0.55); }
+
+.elsewhere a { color: var(--mute); }
+
+.mail a:hover,
+.call a:hover,
+.elsewhere a:hover {
   color: var(--accent);
   text-decoration-color: var(--accent);
 }
 
-/* ── Colophon ───────────────────────────────────────────────────────── */
+/* ── Foot ───────────────────────────────────────────────────────────── */
 
-.colophon {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.375rem var(--gap);
-  justify-content: space-between;
-  margin-top: 4.5rem;
-  padding-top: 1.125rem;
-  border-top: 1px solid var(--rule);
-  font-family: var(--mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--label);
+.foot {
+  grid-column: 2;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--mute);
 }
 
-/* ── Narrow screens: labels sit above their values ──────────────────── */
+/* ── Narrow screens: labels sit above their block ───────────────────── */
 
-@media (max-width: 34rem) {
-  .fields { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 46rem) {
+  /* Row gap goes to zero so a label can sit closer to its own block
+     than to the block above it. */
+  .page {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
 
-  .fields dt { padding-top: 1.125rem; }
+  .intro,
+  .block,
+  .rail-label,
+  .foot { grid-column: 1; }
 
-  .fields dd { padding-top: 0.25rem; }
+  .rail-label {
+    padding-top: 0;
+    margin-top: 3.5rem;
+    margin-bottom: 1.125rem;
+  }
 
-  .bio + .fields dt:first-of-type,
-  .record-desc + .fields dt:first-of-type { padding-top: 0.5rem; }
-
-  .masthead-meta,
-  .colophon { display: grid; gap: 0.375rem; }
+  .foot { margin-top: 3.5rem; }
 }
 
-/* ── Entrance ───────────────────────────────────────────────────────── */
+/* The leader needs room to read as a leader. Below that, stack the address. */
+@media (max-width: 30rem) {
+  .entry-head { flex-wrap: wrap; }
 
-.reveal {
-  animation: rise 600ms cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+  .entry-name { flex: 1 0 100%; }
+
+  .leader { display: none; }
+
+  .entry-host { margin-top: 0.5rem; }
 }
 
-.reveal:nth-child(1) { animation-delay:  60ms; }
-.reveal:nth-child(2) { animation-delay: 140ms; }
-.reveal:nth-child(3) { animation-delay: 220ms; }
-.reveal:nth-child(4) { animation-delay: 300ms; }
-.reveal:nth-child(5) { animation-delay: 380ms; }
-.reveal:nth-child(6) { animation-delay: 460ms; }
-
-@keyframes rise {
-  from { opacity: 0; transform: translateY(0.75rem); }
-  to   { opacity: 1; transform: none; }
-}
+/* ── Motion: nothing moves on load, only in response to a pointer ───── */
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { animation: none; }
   *, *::before, *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
