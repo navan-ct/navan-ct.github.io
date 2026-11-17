@@ -7,20 +7,20 @@
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#F3F4F6">
+  <meta name="theme-color" content="#F3EEE2">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&display=swap">
 
   <style>
   :root {
     color-scheme: light;
-    --canvas: #f3f4f6;
-    --ink:    #14161b;
-    --body:   #474d59;
-    --faint:  #7f8693;
-    --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --paper: #f3eee2;
+    --ink:   #1b2bd0;
+    --rule:  1.5px;
+    --pad:   clamp(1.25rem, 4vw, 2.5rem);
+    --font:  "Familjen Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   *, *::before, *::after { box-sizing: border-box; }
@@ -29,87 +29,70 @@
 
   body {
     margin: 0;
-    background:
-      radial-gradient(70rem 30rem at 50% -8rem, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
-      var(--canvas);
-    background-repeat: no-repeat;
+    background: var(--paper);
     color: var(--ink);
-    font-family: var(--sans);
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  ::selection { background: var(--ink); color: #fff; }
+  a { color: inherit; text-decoration: none; }
+
+  ::selection { background: var(--ink); color: var(--paper); }
 
   :focus-visible {
-    outline: 2px solid var(--ink);
-    outline-offset: 2px;
-    border-radius: 4px;
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
   }
 
-  .page {
-    max-width: 58rem;
+  .wrap {
+    max-width: 86rem;
     margin: 0 auto;
-    padding: clamp(3rem, 9vw, 6.5rem) clamp(1rem, 5vw, 2rem) 3rem;
+    padding: 0 var(--pad) var(--pad);
   }
 
-  .mark {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.8125rem;
-    background: linear-gradient(180deg, #2c2f38 0%, #14161b 100%);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.16),
-      0 1px 2px rgba(20, 22, 27, 0.24),
-      0 10px 18px -8px rgba(20, 22, 27, 0.4);
+  .top {
+    padding: 1.5rem 0 1.125rem;
+    border-bottom: var(--rule) solid var(--ink);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    line-height: 1.3;
   }
 
-  h1,
-  .sub {
-    margin: 0;
-    font-size: clamp(2.125rem, 1.45rem + 3vw, 3rem);
-    font-weight: 600;
-    letter-spacing: -0.035em;
-    line-height: 1.08;
+  .say {
+    max-width: 14em;
+    margin: clamp(3rem, 8vw, 5.5rem) 0 0 -0.05em;
+    font-size: clamp(2.375rem, 1rem + 4.6vw, 4.75rem);
+    font-weight: 500;
+    line-height: 1.03;
+    letter-spacing: -0.038em;
+    text-wrap: balance;
   }
-
-  h1 { margin-top: 1.75rem; }
-
-  .sub { color: var(--faint); }
 
   .home {
     display: inline-block;
-    margin-top: 1.375rem;
-    font-size: 1.0625rem;
+    margin-top: clamp(1.75rem, 4vw, 2.75rem);
+    font-size: clamp(1.1875rem, 1rem + 0.6vw, 1.375rem);
     font-weight: 500;
-    color: var(--body);
     text-decoration: underline;
-    text-decoration-color: rgba(20, 22, 27, 0.2);
-    text-underline-offset: 0.2em;
-    transition: color 160ms ease, text-decoration-color 160ms ease;
+    text-decoration-thickness: var(--rule);
+    text-underline-offset: 0.18em;
   }
 
   @media (hover: hover) {
-    .home:hover {
-      color: var(--ink);
-      text-decoration-color: currentColor;
-    }
+    .home:hover { text-decoration-thickness: 2.5px; }
   }
   </style>
 </head>
 <body>
-  <main class="page">
-    <a href="/" aria-label="Navaneeth CT, home">
-      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <path d="M10.5 22V10l11 12V10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-    <h1>Page not found</h1>
-    <p class="sub">There is nothing at this address.</p>
+<div class="wrap">
+  <header class="top"><a href="/">Navaneeth CT</a></header>
+  <main>
+    <h1 class="say">Page not found. There is nothing at this address.</h1>
     <a class="home" href="/">Go to the home page</a>
   </main>
+</div>
 </body>
 </html>

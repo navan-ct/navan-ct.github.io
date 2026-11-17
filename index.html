@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navaneeth CT · Software engineer in Kerala, India</title>
-  <meta name="description" content="Navaneeth CT is an independent software engineer in Kerala, India. He runs OnePointO Labs, an MVP studio, and builds Emploist and Page Lens.">
+  <title>Navaneeth CT · Senior Software Engineer in Kerala, India</title>
+  <meta name="description" content="Navaneeth CT is a senior software engineer based in Kerala, India, with 6 years of experience building web applications and APIs.">
   <meta name="author" content="Navaneeth CT">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.navaneethct.com/">
@@ -15,15 +15,15 @@
   <meta property="og:site_name" content="Navaneeth CT">
   <meta property="og:url" content="https://www.navaneethct.com/">
   <meta property="og:title" content="Navaneeth CT">
-  <meta property="og:description" content="Independent software engineer in Kerala, India. Runs OnePointO Labs, builds Emploist and Page Lens.">
+  <meta property="og:description" content="Senior software engineer based in Kerala, India, with 6 years of experience building web applications and APIs.">
   <meta property="og:image" content="https://www.navaneethct.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Navaneeth CT, independent software engineer in Kerala, India. OnePointO Labs, Emploist, Page Lens.">
+  <meta property="og:image:alt" content="Navaneeth CT, senior software engineer in Kerala, India, with a timeline of his experience from 2020 to 2026.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ctnavan">
   <meta name="twitter:creator" content="@ctnavan">
-  <meta name="theme-color" content="#F3F4F6">
+  <meta name="theme-color" content="#F3EEE2">
 
   <script type="application/ld+json">
   {
@@ -42,7 +42,7 @@
         "@type": "ProfilePage",
         "@id": "https://www.navaneethct.com/#profilepage",
         "url": "https://www.navaneethct.com/",
-        "name": "Navaneeth CT · Software engineer in Kerala, India",
+        "name": "Navaneeth CT · Senior Software Engineer in Kerala, India",
         "inLanguage": "en",
         "isPartOf": { "@id": "https://www.navaneethct.com/#website" },
         "mainEntity": { "@id": "https://www.navaneethct.com/#person" }
@@ -52,18 +52,17 @@
         "@id": "https://www.navaneethct.com/#person",
         "name": "Navaneeth CT",
         "url": "https://www.navaneethct.com/",
-        "jobTitle": "Software Engineer",
-        "description": "Independent software engineer in Kerala, India",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior software engineer in Kerala, India",
         "email": "mailto:hello@navaneethct.com",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "Kerala",
           "addressCountry": "IN"
         },
-        "worksFor": {
-          "@type": "Organization",
-          "name": "OnePointO Labs",
-          "url": "https://onepointolabs.com"
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Calicut"
         },
         "sameAs": [
           "https://github.com/navan-ct",
@@ -77,36 +76,24 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..600&family=Geist+Mono:wght@500..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&display=swap">
 
   <style>
-  /* ── Tokens ── */
+  /* ── One ink on paper ── */
 
   :root {
     color-scheme: light;
 
-    --canvas:  #f3f4f6;
-    --surface: #ffffff;
-    --ink:     #14161b;
-    --body:    #474d59;
-    --mute:    #656c79;
-    --faint:   #7f8693;
-    --line:    rgba(20, 22, 27, 0.08);
+    --paper: #f3eee2;
+    --ink:   #1b2bd0;
+    --mid:   #4b56d4;
+    --tint:  rgba(27, 43, 208, 0.1);
+    --hair:  rgba(27, 43, 208, 0.3);
 
-    --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --rule: 1.5px;
+    --pad:  clamp(1.25rem, 4vw, 2.5rem);
 
-    --rest:
-      0 0 0 1px rgba(20, 22, 27, 0.06),
-      0 1px 1px rgba(20, 22, 27, 0.03),
-      0 3px 6px -2px rgba(20, 22, 27, 0.05),
-      0 14px 28px -16px rgba(20, 22, 27, 0.12);
-    --raised:
-      0 0 0 1px rgba(20, 22, 27, 0.08),
-      0 1px 1px rgba(20, 22, 27, 0.03),
-      0 6px 12px -4px rgba(20, 22, 27, 0.07),
-      0 26px 44px -20px rgba(20, 22, 27, 0.2);
-
+    --font: "Familjen Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   }
 
@@ -116,823 +103,607 @@
 
   body {
     margin: 0;
-    background:
-      radial-gradient(70rem 30rem at 50% -8rem, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
-      var(--canvas);
-    background-repeat: no-repeat;
+    background: var(--paper);
     color: var(--ink);
-    font-family: var(--sans);
-    font-size: 1rem;
-    line-height: 1.5;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    line-height: 1.42;
+    font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .sprite { display: none; }
+  h1, h2, h3, p, ol { margin: 0; }
 
-  ::selection { background: var(--ink); color: #fff; }
+  a { color: inherit; text-decoration: none; }
+
+  ::selection { background: var(--ink); color: var(--paper); }
 
   :focus-visible {
-    outline: 2px solid var(--ink);
-    outline-offset: 2px;
-    border-radius: 4px;
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
   }
 
-  /* ── Page grid: intro and contact share the top, work runs full width ── */
+  /* Hyphenated words stay on one line. */
+  .nb { white-space: nowrap; }
 
-  .page {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 21rem;
-    grid-template-areas:
-      "intro contact"
-      "work  work"
-      "foot  foot";
-    column-gap: 3.5rem;
-    row-gap: clamp(3.25rem, 7vw, 4.5rem);
-    max-width: 58rem;
+  .u {
+    text-decoration: underline;
+    text-decoration-thickness: var(--rule);
+    text-underline-offset: 0.18em;
+  }
+
+  .wrap {
+    max-width: 86rem;
     margin: 0 auto;
-    padding: clamp(3rem, 9vw, 6.5rem) clamp(1rem, 5vw, 2rem) 3rem;
+    padding: 0 var(--pad) var(--pad);
   }
 
-  .intro   { grid-area: intro; }
-  .contact { grid-area: contact; align-self: end; }
-  .work    { grid-area: work; }
-  .foot    { grid-area: foot; }
+  /* ── Top line ── */
 
-  /* ── Intro ── */
-
-  .mark {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.8125rem;
-    background: linear-gradient(180deg, #2c2f38 0%, #14161b 100%);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.16),
-      0 1px 2px rgba(20, 22, 27, 0.24),
-      0 10px 18px -8px rgba(20, 22, 27, 0.4);
+  .top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: baseline;
+    column-gap: 1.5rem;
+    padding: 1.5rem 0 1.125rem;
+    border-bottom: var(--rule) solid var(--ink);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.3;
   }
 
-  .name,
-  .role {
-    margin: 0;
-    font-size: clamp(2.125rem, 1.45rem + 3vw, 3rem);
-    font-weight: 600;
-    letter-spacing: -0.035em;
-    line-height: 1.08;
+  .top-name { font-weight: 700; }
+
+  .top nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
   }
 
-  .name { margin-top: 1.75rem; }
+  /* ── Statement ── */
 
-  .role {
-    color: var(--faint);
+  /* Large type carries more space on its left side than small type, so it is pulled back to the margin. */
+  .say {
+    max-width: 17.2em;
+    margin-top: clamp(3rem, 8vw, 5.5rem);
+    margin-left: -0.05em;
+    font-size: clamp(2.375rem, 1rem + 4.6vw, 4.75rem);
+    font-weight: 500;
+    line-height: 1.03;
+    letter-spacing: -0.038em;
     text-wrap: balance;
   }
 
-  .lead {
-    max-width: 31rem;
-    margin: 1.375rem 0 0;
-    font-size: 1.0625rem;
-    line-height: 1.6;
-    color: var(--body);
-    text-wrap: pretty;
+  .now {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 2.5rem;
+    margin-top: clamp(1.75rem, 4vw, 2.75rem);
+    font-size: clamp(1.1875rem, 1rem + 0.6vw, 1.375rem);
+    font-weight: 500;
   }
 
-  /* ── Group labels ── */
+  .now-line {
+    display: flex;
+    gap: 0.55em;
+  }
+
+  /* The dot sits at the middle of the first line, also when the sentence wraps. */
+  .now-mark {
+    flex: none;
+    width: 0.62em;
+    height: 0.62em;
+    margin-top: 0.44em;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+
+  /* ── Section label ── */
 
   .label {
-    margin: 0 0 0.75rem;
-    padding-left: 0.25rem;
-    font-size: 0.8125rem;
+    margin-top: clamp(4.5rem, 9vw, 7rem);
+    padding-top: 0.875rem;
+    border-top: var(--rule) solid var(--ink);
+    font-size: 1.0625rem;
     font-weight: 500;
-    line-height: 1.4;
-    color: var(--mute);
+    line-height: 1.3;
   }
 
-  /* ── Contact list ── */
+  .label h2 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
 
-  .list {
-    margin: 0;
+  .num {
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    color: var(--mid);
+  }
+
+  .label .num { margin-right: 0.5em; }
+
+  /* ── Experience, drawn to scale: one column per month, Jan 2020 to Dec 2026 ── */
+
+  .chart { margin-top: 2rem; }
+
+  .today,
+  .bars,
+  .scale {
+    display: grid;
+    grid-template-columns: repeat(84, minmax(0, 1fr));
+  }
+
+  /* A flag at the end of the current month; its line meets the last bar. */
+  .today span {
+    grid-column: 1 / 84;
+    justify-self: end;
+    padding: 0 0.5rem 0.625rem 0;
+    border-right: var(--rule) solid var(--ink);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .bars { height: clamp(3rem, 6vw, 4.5rem); }
+
+  /* The bottom edge of every cell forms one unbroken axis. */
+  .rest { border-bottom: var(--rule) solid var(--ink); }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    min-width: 0;
+    padding: 0 0.5rem;
+    overflow: hidden;
+    border: var(--rule) solid var(--ink);
+    background: var(--tint);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .bar + .bar { border-left: 0; }
+
+  .bar-own {
+    border-top-style: dashed;
+    border-right-style: dashed;
+    background: none;
+  }
+
+  .scale {
+    font-size: clamp(0.75rem, 0.62rem + 0.4vw, 0.9375rem);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    color: var(--mid);
+  }
+
+  .scale span {
+    grid-column: span 12;
+    padding: 0.75rem 0 0 clamp(0.1875rem, 0.5vw, 0.375rem);
+    border-left: var(--rule) solid var(--ink);
+  }
+
+  .scale span:last-child { border-right: var(--rule) solid var(--ink); }
+
+  /* ── Jobs, numbered to match the bars ── */
+
+  .jobs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.75rem 2.25rem;
+    margin-top: clamp(2.5rem, 5vw, 3.25rem);
     padding: 0;
     list-style: none;
-    overflow: hidden;
-    background: var(--surface);
-    border-radius: 1rem;
-    box-shadow: var(--rest);
   }
 
-  .row {
-    display: grid;
-    grid-template-columns: auto auto minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.8125rem 1rem;
+  .job .num {
+    display: block;
+    margin-bottom: 0.75rem;
     font-size: 0.9375rem;
-    line-height: 1.35;
-    color: var(--ink);
-    text-decoration: none;
-    transition: background-color 160ms ease;
-  }
-
-  /* Separators start after the icon, the way a native list draws them. */
-  li + li .row {
-    background-image: linear-gradient(var(--line), var(--line));
-    background-size: calc(100% - 2.75rem) 1px;
-    background-position: right top;
-    background-repeat: no-repeat;
-  }
-
-  .row:focus-visible {
-    outline-offset: -3px;
-    border-radius: 0.75rem;
-  }
-
-  .row-icon {
-    width: 1rem;
-    height: 1rem;
-    color: var(--body);
-  }
-
-  .row-label { font-weight: 500; }
-
-  .row-value {
-    justify-self: end;
-    overflow: hidden;
-    font-size: 0.875rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: var(--mute);
-    transition: color 160ms ease;
-  }
-
-  .arrow {
-    flex: none;
-    transition: transform 220ms var(--ease);
-  }
-
-  .row .arrow { color: var(--faint); }
-
-  /* ── Work cards ── */
-
-  .cards {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .card {
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 23.5rem);
-    gap: 0.5rem;
-    padding: 0.5rem;
-    background: var(--surface);
-    border-radius: 1.375rem;
-    box-shadow: var(--rest);
-    transition: box-shadow 260ms var(--ease), transform 260ms var(--ease);
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    padding: 1.125rem 1.5rem 1rem 1rem;
-  }
-
-  .card-head {
-    display: flex;
-    align-items: center;
-    gap: 0.875rem;
-  }
-
-  .card-name {
-    margin: 0;
-    font-size: 1.1875rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-  }
-
-  /* The link stretches over the whole card, so the card is one target. */
-  .card-link {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .card-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 1.375rem;
-  }
-
-  .card-link:focus-visible { outline: none; }
-
-  .card-link:focus-visible::after {
-    outline: 2px solid var(--ink);
-    outline-offset: 2px;
-  }
-
-  .card-kind {
-    margin: 0.125rem 0 0;
-    font-size: 0.8125rem;
-    line-height: 1.4;
-    color: var(--mute);
-  }
-
-  .card-desc {
-    max-width: 27rem;
-    margin: 1.125rem 0 1.5rem;
-    font-size: 0.96875rem;
-    line-height: 1.6;
-    color: var(--body);
-    text-wrap: pretty;
-  }
-
-  .card-host {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    margin: auto 0 0;
-    font-family: var(--mono);
-    font-size: 0.78125rem;
-    font-weight: 500;
-    line-height: 1.4;
-    color: var(--mute);
-    transition: color 200ms ease;
-  }
-
-  /* ── Product marks ── */
-
-  .app {
-    display: grid;
-    place-items: center;
-    flex: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 0.6875rem;
-    box-shadow:
-      inset 0 0 0 1px rgba(20, 22, 27, 0.08),
-      0 1px 2px rgba(20, 22, 27, 0.1);
-  }
-
-  .app svg { display: block; }
-
-  .app-onepointo {
-    background: #ffe14a;
-    color: #070708;
-    font-family: var(--mono);
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: -0.03em;
     line-height: 1;
   }
 
-  .app-emploist { background: #4f46e5; }
-
-  .app-pagelens {
-    background: #e6f0fd;
-    color: #0066d6;
+  .job h3 {
+    font-size: 1.6875rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.022em;
   }
 
-  /* ── Product previews ── */
+  .job-meta {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--mid);
+  }
 
-  .shot {
+  .job-meta span { display: block; }
+
+  .job-body {
+    margin-top: 1rem;
+    font-size: 1.09375rem;
+    text-wrap: pretty;
+  }
+
+  /* ── Projects ── */
+
+  .made {
     display: grid;
-    align-items: center;
-    min-height: 13.25rem;
-    padding: 1.25rem;
-    border-radius: 0.875rem;
-    background: var(--tint);
-    box-shadow: inset 0 0 0 1px rgba(20, 22, 27, 0.04);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+    border: var(--rule) solid var(--ink);
   }
 
-  .panel {
-    padding: 0.75rem 0.875rem;
-    background: #fff;
-    border-radius: 0.625rem;
-    box-shadow:
-      0 0 0 1px rgba(20, 22, 27, 0.05),
-      0 1px 2px rgba(20, 22, 27, 0.05),
-      0 10px 22px -10px rgba(20, 22, 27, 0.16);
-    font-size: 0.75rem;
-    line-height: 1.3;
-    color: var(--ink);
-  }
-
-  .panel-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.6875rem;
-    color: var(--mute);
-  }
-
-  /* OnePointO Labs: the 21 day schedule */
-
-  .gantt-row {
-    display: grid;
-    grid-template-columns: 4.5rem minmax(0, 1fr);
-    align-items: center;
-    height: 1.25rem;
-    font-size: 0.6875rem;
-    color: var(--body);
-    white-space: nowrap;
-  }
-
-  .gantt-track {
+  .thing {
     position: relative;
-    height: 100%;
-    background-image:
-      linear-gradient(var(--line), var(--line)),
-      linear-gradient(var(--line), var(--line)),
-      linear-gradient(var(--line), var(--line)),
-      linear-gradient(var(--line), var(--line));
-    background-size: 1px 100%;
-    background-position: 0 0, 30% 0, 65% 0, 100% 0;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 21rem;
+    padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.25rem);
+    transition: background-color 180ms ease, color 180ms ease;
   }
 
-  .gantt-track b {
-    position: absolute;
-    top: 50%;
-    left: calc((var(--from) - 1) / 20 * 100%);
-    width: calc((var(--to) - var(--from)) / 20 * 100%);
-    height: 0.5rem;
-    margin-top: -0.25rem;
-    border-radius: 0.25rem;
-    background: #ffd53d;
-    box-shadow: inset 0 0 0 1px rgba(20, 22, 27, 0.1);
-  }
+  .thing + .thing { border-left: var(--rule) solid var(--ink); }
 
-  .gantt-track b.launch {
-    background: var(--ink);
-    box-shadow: none;
-  }
-
-  .gantt-scale {
-    height: 1.125rem;
-    font-family: var(--mono);
-    font-size: 0.625rem;
+  .thing-kind {
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--mute);
+    line-height: 1.3;
+    color: var(--mid);
+    transition: color 180ms ease;
   }
 
-  .gantt-scale .gantt-track { background: none; }
-
-  .gantt-scale i {
-    position: absolute;
-    top: 0;
-    left: calc((var(--day) - 1) / 20 * 100%);
-    font-style: normal;
-    transform: translateX(-50%);
-  }
-
-  .gantt-scale i:first-child { transform: none; }
-  .gantt-scale i:last-child  { transform: translateX(-100%); }
-
-  /* Emploist: applicants ranked by match */
-
-  .rank-row {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr) 3.25rem 2rem;
-    align-items: center;
-    gap: 0.625rem;
-    padding: 0.4375rem 0;
-    border-top: 1px solid var(--line);
-  }
-
-  .rank-row:last-child { padding-bottom: 0.125rem; }
-
-  .rank-avatar {
-    display: grid;
-    place-items: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    background: #ebeafc;
-    color: #4338ca;
-    font-size: 0.5625rem;
+  .thing h3 {
+    margin-top: clamp(1.75rem, 4vw, 2.5rem);
+    margin-left: -0.05em;
+    font-size: clamp(2.75rem, 1.6rem + 3.4vw, 4.25rem);
     font-weight: 600;
-    letter-spacing: 0.02em;
+    line-height: 0.95;
+    letter-spacing: -0.045em;
   }
 
-  .rank-name {
-    overflow: hidden;
-    font-weight: 500;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  /* The name's link covers the whole frame, so each project is one target. */
+  .thing h3 a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
   }
 
-  .rank-meter {
-    height: 0.25rem;
-    overflow: hidden;
-    border-radius: 0.125rem;
-    background: #e8e8f3;
+  .thing h3 a:focus-visible { outline: none; }
+
+  .thing h3 a:focus-visible::after {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
   }
 
-  .rank-meter i {
-    display: block;
-    height: 100%;
-    border-radius: inherit;
-    background: #4f46e5;
+  .thing-body {
+    max-width: 27rem;
+    margin: 1.25rem 0 2rem;
+    font-size: 1.15625rem;
+    text-wrap: pretty;
   }
 
-  .rank-score {
+  .thing-go {
+    margin-top: auto;
+    font-size: 1.0625rem;
     font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    text-align: right;
   }
 
-  /* Page Lens: one page's search numbers */
+  /* ── Skills ── */
 
-  .lens-ok {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3125rem;
-    font-weight: 500;
-    color: #12804a;
-  }
-
-  .lens-ok i {
-    width: 0.375rem;
-    height: 0.375rem;
-    border-radius: 50%;
-    background: #1aa260;
-  }
-
-  .lens-stats {
+  .tools {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.5rem;
+    gap: 2.25rem;
+    margin-top: 2rem;
   }
 
-  .lens-stats span,
-  .lens-stats b,
-  .lens-stats em { display: block; }
-
-  .lens-stats span {
-    font-size: 0.625rem;
-    color: var(--mute);
-  }
-
-  .lens-stats b {
-    margin-top: 0.125rem;
-    font-size: 0.875rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .lens-stats em {
-    margin-top: 0.0625rem;
-    font-size: 0.625rem;
-    font-style: normal;
+  .tools h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
     font-weight: 500;
-    font-variant-numeric: tabular-nums;
-    color: #12804a;
+    line-height: 1.3;
+    color: var(--mid);
   }
 
-  .lens-chart {
-    display: block;
-    width: 100%;
-    height: 2.5rem;
-    margin-top: 0.625rem;
+  .tools p { font-size: 1.09375rem; }
+
+  /* ── Contact ── */
+
+  .bye {
+    margin-top: clamp(4.5rem, 9vw, 7rem);
+    padding: var(--pad);
+    padding-bottom: clamp(1.25rem, 3.5vw, 2.25rem);
+    background: var(--ink);
+    color: var(--paper);
   }
 
-  /* ── Foot ── */
+  .bye ::selection { background: var(--paper); color: var(--ink); }
 
-  .foot {
-    padding-left: 0.25rem;
-    font-size: 0.8125rem;
-    color: var(--mute);
+  .bye-lead {
+    max-width: 26rem;
+    font-size: clamp(1.1875rem, 1rem + 0.6vw, 1.375rem);
+    font-weight: 500;
+  }
+
+  .mail-box {
+    container-type: inline-size;
+    margin-top: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  /* The address is sized from the width of its box, so it never breaks or overflows. */
+  .mail {
+    display: inline-block;
+    margin-left: -0.05em;
+    font-size: clamp(1.25rem, 7vw, 6.75rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.052em;
+    white-space: nowrap;
+  }
+
+  @supports (font-size: 1cqi) {
+    .mail { font-size: min(6.75rem, 10.2cqi); }
+  }
+
+  .bye nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem 2rem;
+    margin-top: clamp(2rem, 5vw, 3rem);
+    padding-top: 1rem;
+    border-top: var(--rule) solid rgba(243, 238, 226, 0.45);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .bye-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
   }
 
   /* ── Hover, for devices that have it ── */
 
   @media (hover: hover) {
-    .row:hover { background-color: rgba(20, 22, 27, 0.03); }
-    .row:hover .row-value { color: var(--ink); }
-    .row:hover .arrow { transform: translate(2px, -2px); }
-
-    .card:hover {
-      box-shadow: var(--raised);
-      transform: translateY(-2px);
+    .top nav a:hover,
+    .bye nav a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: var(--rule);
+      text-underline-offset: 0.18em;
     }
 
-    .card:hover .card-host { color: var(--ink); }
-    .card:hover .arrow { transform: translate(2px, -2px); }
-  }
+    .now a:hover { text-decoration-thickness: 2.5px; }
 
-  /* ── Arrival ── */
-
-  @keyframes arrive {
-    from {
-      opacity: 0;
-      transform: translateY(0.625rem);
+    .mail:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.05em;
+      text-underline-offset: 0.1em;
     }
-  }
 
-  .intro,
-  .contact,
-  .work .label,
-  .card,
-  .foot {
-    animation: arrive 620ms var(--ease) backwards;
-    animation-delay: calc(var(--step, 0) * 70ms);
-  }
-
-  .contact          { --step: 1; }
-  .work .label      { --step: 2; }
-  .card:nth-child(1) { --step: 3; }
-  .card:nth-child(2) { --step: 4; }
-  .card:nth-child(3) { --step: 5; }
-  .foot             { --step: 6; }
-
-  /* ── One column: contact moves below the work ── */
-
-  @media (max-width: 54rem) {
-    .page {
-      grid-template-columns: minmax(0, 1fr);
-      grid-template-areas:
-        "intro"
-        "work"
-        "contact"
-        "foot";
+    .thing:hover {
+      background: var(--ink);
+      color: var(--paper);
     }
+
+    .thing:hover .thing-kind { color: var(--paper); }
+  }
+
+  /* ── The bars are drawn from left to right when the page opens ── */
+
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes draw {
+      from { clip-path: inset(0 100% 0 0); }
+      to   { clip-path: inset(0 0 0 0); }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; }
+    }
+
+    .bars  { animation: draw 1100ms var(--ease) 150ms both; }
+    .today { animation: appear 400ms ease 1100ms both; }
+  }
+
+  /* ── Narrower pages ── */
+
+  /* Below this width the names no longer fit in the short bars, so every bar shows its number only. */
+  @media (max-width: 82rem) {
+    .bar {
+      justify-content: center;
+      padding: 0;
+    }
+
+    .bar-name { display: none; }
+  }
+
+  @media (max-width: 64rem) {
+    .top { grid-template-columns: 1fr auto; row-gap: 0.125rem; }
+    .top-role { grid-area: 2 / 1; color: var(--mid); }
+    .top nav { grid-area: 1 / 2 / 3 / 3; align-self: center; }
+
+    .jobs,
+    .tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
   @media (max-width: 44rem) {
-    .card { grid-template-columns: minmax(0, 1fr); }
+    body { font-size: 1.0625rem; }
 
-    .card-body { padding: 1rem 1rem 1.125rem; }
+    .top { grid-template-columns: minmax(0, 1fr); padding-top: 1.25rem; }
 
-    .card-desc { margin-bottom: 1.125rem; }
+    .top nav {
+      grid-area: 3 / 1;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-top: 0.875rem;
+      padding-top: 0.875rem;
+      border-top: var(--rule) solid var(--hair);
+    }
 
-    .shot {
-      min-height: 0;
-      padding: 1rem;
+    .say { line-height: 1.06; letter-spacing: -0.034em; }
+
+    .made { grid-template-columns: minmax(0, 1fr); }
+
+    .thing { min-height: 0; }
+
+    .thing + .thing {
+      border-left: 0;
+      border-top: var(--rule) solid var(--ink);
+    }
+
+    .bye-links {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      width: 100%;
     }
   }
 
-  @media (max-width: 24rem) {
-    .gantt-row { grid-template-columns: 4rem minmax(0, 1fr); }
+  @media (max-width: 34rem) {
+    .jobs { grid-template-columns: minmax(0, 1fr); row-gap: 0; }
 
-    .rank-row { grid-template-columns: auto minmax(0, 1fr) 2rem; }
+    .job { padding: 1.5rem 0 1.625rem; border-top: var(--rule) solid var(--hair); }
+    .job:first-child { padding-top: 0; border-top: 0; }
+    .job:last-child { padding-bottom: 0; }
 
-    .rank-meter { display: none; }
-  }
-
-  /* ── Reduced motion ── */
-
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      transition-duration: 0.01ms !important;
-      animation-duration: 0.01ms !important;
-      animation-delay: 0s !important;
-    }
+    .tools { grid-template-columns: minmax(0, 1fr); gap: 1.375rem; }
   }
   </style>
 </head>
 <body>
+<div class="wrap">
 
-  <svg class="sprite" aria-hidden="true">
-    <symbol id="arrow" viewBox="0 0 11 11">
-      <path d="M2 9L9 2M9 2H3.4M9 2v5.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </symbol>
-  </svg>
+  <header class="top">
+    <span class="top-name">Navaneeth CT</span>
+    <span class="top-role">Senior Software Engineer in Kerala, India</span>
+    <nav aria-label="Contact links">
+      <a href="mailto:hello@navaneethct.com">Email</a>
+      <a href="https://github.com/navan-ct" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/navaneeth-ct" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://x.com/ctnavan" target="_blank" rel="noopener noreferrer">X</a>
+      <a href="https://raw.githubusercontent.com/navan-ct/resume/main/Navaneeth-CT-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
+  </header>
 
-  <main class="page">
+  <main>
 
-    <header class="intro">
-      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <path d="M10.5 22V10l11 12V10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <h1 class="name">Navaneeth CT</h1>
-      <p class="role">Independent software engineer in Kerala, India.</p>
-      <p class="lead">
-        I have been writing software for six years. I work on my own now,
-        building small web products and taking them from an idea to something
-        people use.
-      </p>
-    </header>
+    <h1 class="say">I&rsquo;m Navaneeth, a software engineer based in Kerala, India. I&rsquo;ve spent the last 6 years building web applications and APIs.</h1>
 
-    <section class="contact" aria-labelledby="contact-label">
-      <h2 class="label" id="contact-label">Contact</h2>
+    <p class="now">
+      <span class="now-line"><i class="now-mark" aria-hidden="true"></i>I&rsquo;m currently looking for my next role.</span>
+      <a class="u" href="https://raw.githubusercontent.com/navan-ct/resume/main/Navaneeth-CT-Resume.pdf" target="_blank" rel="noopener noreferrer">View my resume (PDF)</a>
+    </p>
 
-      <ul class="list">
-        <li>
-          <a class="row" href="mailto:hello@navaneethct.com">
-            <svg class="row-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="1.75" y="3.25" width="12.5" height="9.5" rx="2"/>
-              <path d="m2.5 5 5.5 4 5.5-4"/>
-            </svg>
-            <span class="row-label">Email</span>
-            <span class="row-value">hello@navaneethct.com</span>
-            <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-          </a>
+    <section aria-labelledby="experience-label">
+      <div class="label"><h2 id="experience-label">Experience</h2></div>
+
+      <div class="chart" role="img" aria-label="A timeline from 2020 to 2026. Bititude, July 2020 to June 2022. Neudesic, June 2022 to September 2024. Micro.company, September 2024 to June 2025. IBS Software, July 2025 to March 2026. Projects, April 2026 to now.">
+        <div class="today"><span>November 2026</span></div>
+
+        <div class="bars">
+          <div class="rest" style="grid-column: 1 / 7"></div>
+          <div class="bar" style="grid-column: 7 / 31"><span class="num">1</span><span class="bar-name">Bititude</span></div>
+          <div class="bar" style="grid-column: 31 / 58"><span class="num">2</span><span class="bar-name">Neudesic</span></div>
+          <div class="bar" style="grid-column: 58 / 67"><span class="num">3</span><span class="bar-name">Micro.company</span></div>
+          <div class="bar" style="grid-column: 67 / 76"><span class="num">4</span><span class="bar-name">IBS Software</span></div>
+          <div class="bar bar-own" style="grid-column: 76 / 84"><span class="num">5</span><span class="bar-name">Projects</span></div>
+          <div class="rest" style="grid-column: 84 / 85"></div>
+        </div>
+
+        <div class="scale">
+          <span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+        </div>
+      </div>
+
+      <ol class="jobs">
+        <li class="job">
+          <span class="num" aria-hidden="true">1</span>
+          <h3>Bititude</h3>
+          <p class="job-meta"><span>Software Engineer</span><span>Jul 2020 &ndash; Jun 2022</span></p>
+          <p class="job-body">I built the video conferencing and chat for live classes in a learning management system, first with WebRTC and later with Agora. I also led the small team on the project, from planning through to delivery.</p>
         </li>
-        <li>
-          <a class="row" href="https://cal.com/navaneethct/20min" target="_blank" rel="noopener noreferrer">
-            <svg class="row-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2.25" y="3" width="11.5" height="10.75" rx="2"/>
-              <path d="M2.25 6.5h11.5M5.5 1.75v2.5M10.5 1.75v2.5"/>
-            </svg>
-            <span class="row-label">Call</span>
-            <span class="row-value">Book 20 minutes</span>
-            <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-          </a>
+        <li class="job">
+          <span class="num" aria-hidden="true">2</span>
+          <h3>Neudesic</h3>
+          <p class="job-meta"><span>Consultant II</span><span>Jun 2022 &ndash; Sep 2024</span></p>
+          <p class="job-body">I worked on the core booking APIs for one of India&rsquo;s largest airlines, where more than 150,000 bookings go through every day. An API template I built there became the standard base for the airline&rsquo;s backend services.</p>
         </li>
-        <li>
-          <a class="row" href="https://github.com/navan-ct" target="_blank" rel="noopener noreferrer">
-            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
-              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
-            <span class="row-label">GitHub</span>
-            <span class="row-value">navan-ct</span>
-            <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-          </a>
+        <li class="job">
+          <span class="num" aria-hidden="true">3</span>
+          <h3>Micro.company</h3>
+          <p class="job-meta"><span>Software Engineer</span><span>Sep 2024 &ndash; Jun 2025</span></p>
+          <p class="job-body">I was the only engineer on an AI tool that automates the browser: you describe a task in plain language and it carries it out on the web. I also built a Shopify app that adds a store locator to a merchant&rsquo;s storefront.</p>
         </li>
-        <li>
-          <a class="row" href="https://x.com/ctnavan" target="_blank" rel="noopener noreferrer">
-            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
-              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-            </svg>
-            <span class="row-label">X</span>
-            <span class="row-value">@ctnavan</span>
-            <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-          </a>
+        <li class="job">
+          <span class="num" aria-hidden="true">4</span>
+          <h3>IBS Software</h3>
+          <p class="job-meta"><span>Lead Solution Engineer</span><span>Jul 2025 &ndash; Mar 2026</span></p>
+          <p class="job-body">My focus was the frontend of a travel booking platform for flights, hotels, and add-ons, which powers the regional storefronts of a leading global online travel agency. I also contributed to the company&rsquo;s <span class="nb">in-house</span> UI library.</p>
         </li>
-        <li>
-          <a class="row" href="https://www.linkedin.com/in/navaneeth-ct" target="_blank" rel="noopener noreferrer">
-            <svg class="row-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-            <span class="row-label">LinkedIn</span>
-            <span class="row-value">navaneeth-ct</span>
-            <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-          </a>
-        </li>
-      </ul>
+      </ol>
     </section>
 
-    <section class="work" aria-labelledby="work-label">
-      <h2 class="label" id="work-label">Work</h2>
+    <section aria-labelledby="projects-label">
+      <div class="label"><h2 id="projects-label"><span class="num" aria-hidden="true">5</span>Projects</h2></div>
 
-      <div class="cards">
-
-        <article class="card" style="--tint: #faf6e2">
-          <div class="card-body">
-            <div class="card-head">
-              <span class="app app-onepointo" aria-hidden="true">1.0</span>
-              <div>
-                <h3 class="card-name">
-                  <a class="card-link" href="https://onepointolabs.com" target="_blank" rel="noopener noreferrer">OnePointO Labs</a>
-                </h3>
-                <p class="card-kind">MVP studio</p>
-              </div>
-            </div>
-            <p class="card-desc">
-              For founders who cannot build the thing themselves. You bring the
-              idea, I scope, design, and build it, and 21 days later it is live
-              with the code in your own repo.
-            </p>
-            <p class="card-host">
-              onepointolabs.com
-              <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-            </p>
-          </div>
-
-          <div class="shot" aria-hidden="true" data-nosnippet>
-            <div class="panel">
-              <div class="gantt-row gantt-scale">
-                <span>Day</span>
-                <div class="gantt-track">
-                  <i style="--day: 1">01</i>
-                  <i style="--day: 7">07</i>
-                  <i style="--day: 14">14</i>
-                  <i style="--day: 21">21</i>
-                </div>
-              </div>
-              <div class="gantt-row"><span>Scope</span><div class="gantt-track"><b style="--from: 1; --to: 4"></b></div></div>
-              <div class="gantt-row"><span>Core build</span><div class="gantt-track"><b style="--from: 3; --to: 10"></b></div></div>
-              <div class="gantt-row"><span>The rest</span><div class="gantt-track"><b style="--from: 9; --to: 16"></b></div></div>
-              <div class="gantt-row"><span>Polish</span><div class="gantt-track"><b style="--from: 15; --to: 19"></b></div></div>
-              <div class="gantt-row"><span>Launch</span><div class="gantt-track"><b class="launch" style="--from: 19; --to: 21"></b></div></div>
-            </div>
-          </div>
+      <div class="made">
+        <article class="thing">
+          <p class="thing-kind">Web app</p>
+          <h3><a href="https://www.emploist.com/" target="_blank" rel="noopener noreferrer">Emploist</a></h3>
+          <p class="thing-body">An applicant tracking system that I built and launched on my own. It gives a company its own careers page and hiring pipeline, and uses AI to rank every application against the job description.</p>
+          <p class="thing-go u" aria-hidden="true">emploist.com</p>
         </article>
-
-        <article class="card" style="--tint: #f1f1fc">
-          <div class="card-body">
-            <div class="card-head">
-              <span class="app app-emploist" aria-hidden="true">
-                <svg viewBox="0 0 64 64" width="40" height="40" fill="#fff" focusable="false">
-                  <rect x="15" y="17" width="34" height="8" rx="4"/>
-                  <rect x="15" y="28" width="24" height="8" rx="4" opacity="0.7"/>
-                  <rect x="15" y="39" width="14" height="8" rx="4" opacity="0.42"/>
-                </svg>
-              </span>
-              <div>
-                <h3 class="card-name">
-                  <a class="card-link" href="https://www.emploist.com/" target="_blank" rel="noopener noreferrer">Emploist</a>
-                </h3>
-                <p class="card-kind">Applicant tracking</p>
-              </div>
-            </div>
-            <p class="card-desc">
-              A small team's whole hiring process in one place: a careers page,
-              a candidate pipeline, and AI that ranks every application against
-              the job description.
-            </p>
-            <p class="card-host">
-              emploist.com
-              <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-            </p>
-          </div>
-
-          <div class="shot" aria-hidden="true" data-nosnippet>
-            <div class="panel">
-              <div class="panel-head"><span>Senior Product Designer</span><span>Match</span></div>
-              <div class="rank-row">
-                <span class="rank-avatar">DV</span>
-                <span class="rank-name">Diego Varga</span>
-                <span class="rank-meter"><i style="width: 91%"></i></span>
-                <span class="rank-score">91%</span>
-              </div>
-              <div class="rank-row">
-                <span class="rank-avatar">KC</span>
-                <span class="rank-name">Kofi Clarke</span>
-                <span class="rank-meter"><i style="width: 88%"></i></span>
-                <span class="rank-score">88%</span>
-              </div>
-              <div class="rank-row">
-                <span class="rank-avatar">FL</span>
-                <span class="rank-name">Fatima Lindqvist</span>
-                <span class="rank-meter"><i style="width: 86%"></i></span>
-                <span class="rank-score">86%</span>
-              </div>
-            </div>
-          </div>
+        <article class="thing">
+          <p class="thing-kind">Chrome extension</p>
+          <h3><a href="https://getpagelens.com" target="_blank" rel="noopener noreferrer">Page Lens</a></h3>
+          <p class="thing-body">A Chrome extension that puts a page&rsquo;s Google Search Console numbers right beside the page. You can see its clicks, impressions, position, and top queries without leaving the tab.</p>
+          <p class="thing-go u" aria-hidden="true">getpagelens.com</p>
         </article>
-
-        <article class="card" style="--tint: #ecf3fc">
-          <div class="card-body">
-            <div class="card-head">
-              <span class="app app-pagelens" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                  <circle cx="12" cy="12" r="9"/>
-                  <circle cx="11.5" cy="11.5" r="3.5"/>
-                  <path d="m14 14 2 2"/>
-                </svg>
-              </span>
-              <div>
-                <h3 class="card-name">
-                  <a class="card-link" href="https://getpagelens.com" target="_blank" rel="noopener noreferrer">Page Lens</a>
-                </h3>
-                <p class="card-kind">Chrome extension</p>
-              </div>
-            </div>
-            <p class="card-desc">
-              Your Search Console numbers beside the page you are looking at.
-              Clicks, impressions, position, and top queries, with no tab
-              switching and no filtering down to one URL.
-            </p>
-            <p class="card-host">
-              getpagelens.com
-              <svg class="arrow" width="10" height="10" aria-hidden="true" focusable="false"><use href="#arrow"/></svg>
-            </p>
-          </div>
-
-          <div class="shot" aria-hidden="true" data-nosnippet>
-            <div class="panel">
-              <div class="panel-head"><span>Last 28 days</span><span class="lens-ok"><i></i>Indexed</span></div>
-              <div class="lens-stats">
-                <div><span>Clicks</span><b>1,247</b><em>+12%</em></div>
-                <div><span>Impr.</span><b>38.4K</b><em>+9%</em></div>
-                <div><span>CTR</span><b>3.2%</b><em>+0.4</em></div>
-                <div><span>Position</span><b>11.4</b><em>&minus;2.1</em></div>
-              </div>
-              <svg class="lens-chart" viewBox="0 0 280 40" preserveAspectRatio="none" focusable="false">
-                <defs>
-                  <linearGradient id="lens-fill" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stop-color="#0066d6" stop-opacity="0.16"/>
-                    <stop offset="1" stop-color="#0066d6" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <path d="M0 31 20 27 40 29 60 23 80 25 100 19 120 22 140 15 160 18 180 11 200 14 220 8 240 11 260 4 280 6V40H0Z" fill="url(#lens-fill)"/>
-                <path d="M0 31 20 27 40 29 60 23 80 25 100 19 120 22 140 15 160 18 180 11 200 14 220 8 240 11 260 4 280 6" fill="none" stroke="#0066d6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-              </svg>
-            </div>
-          </div>
-        </article>
-
       </div>
     </section>
 
-    <footer class="foot">Updated November 2026</footer>
+    <section aria-labelledby="skills-label">
+      <div class="label"><h2 id="skills-label">Skills and education</h2></div>
+
+      <div class="tools">
+        <div><h3>Languages</h3><p>TypeScript, JavaScript, HTML, CSS</p></div>
+        <div><h3>Frontend</h3><p>React, Next.js, React&nbsp;Native, Tailwind&nbsp;CSS</p></div>
+        <div><h3>Backend</h3><p>Node.js, NestJS, Express.js, REST&nbsp;APIs, GraphQL</p></div>
+        <div><h3>Databases and caching</h3><p>PostgreSQL, MySQL, MongoDB, Redis</p></div>
+        <div><h3>Testing</h3><p>Playwright, Jest, Vitest, React&nbsp;Testing&nbsp;Library</p></div>
+        <div><h3>DevOps and cloud</h3><p>Docker, AWS, Cloudflare, GitHub&nbsp;Actions&nbsp;CI/CD</p></div>
+        <div><h3>AI tooling</h3><p>Claude&nbsp;Code, AI&nbsp;agents, MCP, <span class="nb">test-driven development</span></p></div>
+        <div><h3>Education</h3><p>Bachelor of Computer Applications, University&nbsp;of&nbsp;Calicut, 2017&nbsp;&ndash;&nbsp;2020</p></div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="bye">
+    <p class="bye-lead">If you&rsquo;d like to get in touch, email is the best way to reach me.</p>
+    <div class="mail-box">
+      <a class="mail" href="mailto:hello@navaneethct.com">hello@navaneethct.com</a>
+    </div>
+    <nav aria-label="Elsewhere">
+      <div class="bye-links">
+        <a href="https://github.com/navan-ct" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/navaneeth-ct" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/ctnavan" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://raw.githubusercontent.com/navan-ct/resume/main/Navaneeth-CT-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+      <span>Updated November 2026</span>
+    </nav>
+  </footer>
+
+</div>
 </body>
 </html>
